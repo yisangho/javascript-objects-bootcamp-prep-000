@@ -3,7 +3,8 @@ var playlist = { bbb : "song1",
 
 function updatePlaylist(obj, key, value) {
   console.log(obj);
-  
+  console.log(key);
+  console.log(value);
   return Object.assign({}, obj, { [key]: [value] })
 }
 
