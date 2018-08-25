@@ -1,20 +1,12 @@
 var playlist = { bbb : "song1",
                  ccc : "song2"}
 
-function updatePlaylist(obj, key, value) {
-  console.log(obj);
-  console.log(key);
-  console.log(value);
-
-  //obj = Object.assign({}, obj, { [key]: value })
-
-  //console.log(obj);
-
-  //return obj
-
-  return Object.assign({}, obj, { [key]: value });
+function updatePlaylist(playlist, artistName, songTitle){
+playlist[artistName] = songTitle;
+return playlist;
 }
 
-function removeFromPlaylist(obj, key) {
-  return delete obj.key
+function removeFromPlaylist(playlist, artistName){
+delete playlist.[artistName];
+return playlist;
 }
