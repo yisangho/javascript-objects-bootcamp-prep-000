@@ -2,6 +2,8 @@ var playlist = { bbb : "song1",
                  ccc : "song2"}
 
 function updatePlaylist(obj, key, value) {
+  console.log(obj);
+  
   return Object.assign({}, obj, { [key]: [value] })
 }
 
