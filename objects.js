@@ -6,11 +6,13 @@ function updatePlaylist(obj, key, value) {
   console.log(key);
   console.log(value);
 
-  obj = Object.assign({}, obj, { [key]: value })
+  //obj = Object.assign({}, obj, { [key]: value })
 
-  console.log(obj);
+  //console.log(obj);
 
-  return obj
+  //return obj
+
+  return Object.assign({}, obj, { [key]: value });
 }
 
 function removeFromPlaylist(obj, key) {
